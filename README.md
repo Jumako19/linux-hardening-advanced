@@ -76,7 +76,7 @@ Ejecucion: *sudo ./scripts/revert.sh*
 
 ---
 
-## 🟧 **PASO 6 — Mejorar la sección TOOLS con iconos y mini bloques**
+## 🟧 ToolKit
 ### 🧰 Herramientas de auditoría
 
 Todas las tools están diseñadas para obtener información crítica del sistema.
