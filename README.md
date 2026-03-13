@@ -24,7 +24,6 @@
 - [Scripts](#-scripts-principales)
 - [Tools](#-herramientas-de-auditoría)
 - [Conclusiones](#-conclusiones)
-- [Autor](#-autor)
 
 
 ## 📝 Descripción general
