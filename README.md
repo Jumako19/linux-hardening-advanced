@@ -44,3 +44,21 @@ Este proyecto implementa un **bastionado avanzado de un sistema Linux**, incluye
 - 🔍 Escaneo de rootkits  
 
 Todo ello acompañado de **informes reales generados en la carpeta `/informes/`**.
+
+
+## 🧾 Scripts principales
+
+### 🔥 `hardening.sh`
+Automatiza el bastionado completo:
+
+- Configura firewall  
+- Activa Fail2ban  
+- Protege SSH  
+- Aplica ASLR  
+- Instala AIDE  
+- Deshabilita servicios inseguros
+
+**Ejecución:**
+```bash
+sudo ./scripts/hardening.sh
+
