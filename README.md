@@ -62,3 +62,5 @@ Automatiza el bastionado completo:
 ```bash
 sudo ./scripts/hardening.sh
 
+
+
