@@ -43,12 +43,10 @@ Este proyecto implementa un **bastionado avanzado de un sistema Linux**, incluye
 - 🧬 Verificación de integridad  
 - 🔍 Escaneo de rootkits  
 
-Todo ello acompañado de **informes reales generados en la carpeta `/informes/`**.
-
 
 ## 🧾 Scripts principales
 
-### 🔥 `hardening.sh`
+### 🔥 Script de Hardening - `hardening.sh`
 Automatiza el bastionado completo:
 
 - Configura firewall  
@@ -58,9 +56,26 @@ Automatiza el bastionado completo:
 - Instala AIDE  
 - Deshabilita servicios inseguros
 
-**Ejecución:**
-```bash
+Ejecucion: 
 sudo ./scripts/hardening.sh
+
+
+### ♻️ Script de Reversión — `revert.sh`
+
+Este script deshace los cambios aplicados por el proceso de bastionado y devuelve el sistema a un estado anterior más permisivo.
+
+### 🔄 Cambios que revierte:
+
+- 🔐 Restaura las opciones originales de SSH  
+- 🚫 Elimina el banner legal  
+- 🛑 Detiene y deshabilita Fail2ban  
+- 🔥 Desactiva el firewall UFW  
+- 🧹 Elimina la configuración de `umask 027`  
+- ♻️ Revierte parámetros añadidos por el hardening  
+
+---
+
+
 
 
 
