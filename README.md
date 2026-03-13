@@ -56,8 +56,7 @@ Automatiza el bastionado completo:
 - Instala AIDE  
 - Deshabilita servicios inseguros
 
-Ejecucion: 
-sudo ./scripts/hardening.sh
+Ejecucion: *sudo ./scripts/hardening.sh*
 
 
 ### ♻️ Script de Reversión — `revert.sh`
@@ -72,6 +71,8 @@ Este script deshace los cambios aplicados por el proceso de bastionado y devuelv
 - 🔥 Desactiva el firewall UFW  
 - 🧹 Elimina la configuración de `umask 027`  
 - ♻️ Revierte parámetros añadidos por el hardening  
+
+Ejecucion: *sudo ./scripts/revert.sh*
 
 ---
 
