@@ -63,18 +63,18 @@ Automatiza el bastionado completo:
 sudo ./scripts/hardening.sh
 
 
-
 ## ♻️ Script de Reversión — `revert.sh`
 
-Este script revierte todos los cambios aplicados por el proceso de hardening.
+Este script deshace los cambios aplicados por el proceso de bastionado y devuelve el sistema a un estado anterior más permisivo.
 
 ### 🔄 Cambios que revierte:
 
-- 🔐 Restaura los ajustes originales de SSH  
+- 🔐 Restaura las opciones originales de SSH  
 - 🚫 Elimina el banner legal  
 - 🛑 Detiene y deshabilita Fail2ban  
 - 🔥 Desactiva el firewall UFW  
-- 🧹 Limpia configuraciones adicionales como `umask`
+- 🧹 Elimina la configuración de `umask 027`  
+- ♻️ Revierte parámetros añadidos por el hardening  
 
 ---
 
@@ -108,6 +108,7 @@ echo "[+] Restaurando umask por defecto..."
 sed -i '/umask 027/d' /etc/profile
 
 echo "[+] Restauración completada."
+
 
 
 
