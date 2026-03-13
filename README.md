@@ -21,11 +21,8 @@
 ## 📑 Índice
 
 - [Descripción general](#-descripción-general)
-- [Estructura del proyecto](#-estructura-del-proyecto)
 - [Scripts](#-scripts-principales)
 - [Tools](#-herramientas-de-auditoría)
-- [Evidencias reales](#-evidencias-reales)
-- [Resultados del hardening](#-resultados-del-hardening)
 - [Conclusiones](#-conclusiones)
 - [Autor](#-autor)
 
