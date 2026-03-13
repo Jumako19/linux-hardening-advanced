@@ -10,3 +10,9 @@
 
 ---
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Estado-Completado-brightgreen?style=flat-square">
+  <img src="https://img.shields.io/badge/Plataforma-Linux-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Seguridad-Hardening-red?style=flat-square">
+  <img src="https://img.shields.io/badge/Licencia-MIT-lightgrey?style=flat-square">
+</p>
