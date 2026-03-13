@@ -91,6 +91,8 @@ Todas las tools están diseñadas para obtener información crítica del sistema
 
 Ejemplo: *./tools/sysinfo.sh*
 
+---
+
 ##🟧 Conclusiones
 
 El sistema ha quedado correctamente bastionado si:
