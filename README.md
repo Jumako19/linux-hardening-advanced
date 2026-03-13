@@ -64,3 +64,50 @@ sudo ./scripts/hardening.sh
 
 
 
+## ♻️ Script de Reversión — `revert.sh`
+
+Este script revierte todos los cambios aplicados por el proceso de hardening.
+
+### 🔄 Cambios que revierte:
+
+- 🔐 Restaura los ajustes originales de SSH  
+- 🚫 Elimina el banner legal  
+- 🛑 Detiene y deshabilita Fail2ban  
+- 🔥 Desactiva el firewall UFW  
+- 🧹 Limpia configuraciones adicionales como `umask`
+
+---
+
+### 🔧 Código del script:
+```bash
+#!/bin/bash
+
+echo "[+] Revirtiendo configuración del sistema..."
+
+echo "[+] Restaurando configuración SSH..."
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+sed -i 's/PermitRootLogin no/PermitRootLogin prohibit-password/' /etc/ssh/sshd_config
+sed -i '/MaxAuthTries 3/d' /etc/ssh/sshd_config
+sed -i '/ClientAliveInterval 300/d' /etc/ssh/sshd_config
+sed -i '/ClientAliveCountMax 2/d' /etc/ssh/sshd_config
+
+echo "[+] Eliminando banner legal..."
+sed -i '/Banner \/etc\/issue.net/d' /etc/ssh/sshd_config
+rm -f /etc/issue.net
+
+echo "[+] Reiniciando SSH..."
+systemctl restart ssh
+
+echo "[+] Desactivando Fail2ban..."
+systemctl disable --now fail2ban 2>/dev/null
+
+echo "[+] Desactivando firewall UFW..."
+ufw disable 2>/dev/null
+
+echo "[+] Restaurando umask por defecto..."
+sed -i '/umask 027/d' /etc/profile
+
+echo "[+] Restauración completada."
+
+
+
