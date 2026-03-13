@@ -16,3 +16,15 @@
   <img src="https://img.shields.io/badge/Seguridad-Hardening-red?style=flat-square">
   <img src="https://img.shields.io/badge/Licencia-MIT-lightgrey?style=flat-square">
 </p>
+
+
+## 📑 Índice
+
+- [Descripción general](#-descripción-general)
+- [Estructura del proyecto](#-estructura-del-proyecto)
+- [Scripts](#-scripts-principales)
+- [Tools](#-herramientas-de-auditoría)
+- [Evidencias reales](#-evidencias-reales)
+- [Resultados del hardening](#-resultados-del-hardening)
+- [Conclusiones](#-conclusiones)
+- [Autor](#-autor)
