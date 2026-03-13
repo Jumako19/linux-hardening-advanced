@@ -91,6 +91,24 @@ Todas las tools están diseñadas para obtener información crítica del sistema
 
 Ejemplo: *./tools/sysinfo.sh*
 
+##🟧 Conclusiones
+
+El sistema ha quedado correctamente bastionado si:
+
+- Superficie de ataque reducida  
+- Credenciales protegidas  
+- Servicios innecesarios deshabilitados  
+- Protección adicional con Fail2ban  
+- Integridad monitorizada  
+- Herramientas propias de auditoría  
+
+Este proyecto demuestra habilidades reales en:
+
+✔ administración segura  
+✔ automatización  
+✔ hardening  
+✔ auditoría y seguridad ofensiva/defensiva  
+
 
 
 
