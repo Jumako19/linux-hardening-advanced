@@ -76,6 +76,20 @@ Ejecucion: *sudo ./scripts/revert.sh*
 
 ---
 
+## 🟧 **PASO 6 — Mejorar la sección TOOLS con iconos y mini bloques**
+### 🧰 Herramientas de auditoría
+
+Todas las tools están diseñadas para obtener información crítica del sistema.
+
+| Script | Función |
+|--------|---------|
+| `sysinfo.sh` | Información del sistema |
+| `audit_ssh.sh` | Auditoría de SSH |
+| `scan_nmap.sh` | Escaneo seguro a localhost |
+| `integrity_check.sh` | Hashes de integridad |
+| `run_rootkit_scan.sh` | Escaneo de rootkits |
+
+Ejemplo: *./tools/sysinfo.sh*
 
 
 
