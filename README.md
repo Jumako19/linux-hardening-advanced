@@ -93,7 +93,7 @@ Ejemplo: *./tools/sysinfo.sh*
 
 ---
 
-# 🟧 Conclusiones
+## 🟧 Conclusiones
 
 El sistema ha quedado correctamente bastionado si:
 
