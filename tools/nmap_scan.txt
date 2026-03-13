@@ -1,0 +1,17 @@
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-03-13 18:10 CET
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000087s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 10.2p1 Debian 2 (protocol 2.0)
+8080/tcp open  http    Apache httpd 2.4.61 ((Debian))
+Device type: general purpose
+Running: Linux 2.6.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6.32 cpe:/o:linux:linux_kernel:5 cpe:/o:linux:linux_kernel:6
+OS details: Linux 2.6.32, Linux 5.0 - 6.2
+Network Distance: 0 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 10.21 seconds
